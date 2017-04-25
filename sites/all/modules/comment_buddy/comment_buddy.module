@@ -1,0 +1,15 @@
+<?php
+function comment_buddy_menu() {
+    $items = array();
+    $items['add_comment'] = array(
+        'title' => 'comment!',
+        'page callback' => 'say_add_comment',
+        'access callback' => TRUE,
+        'type' => MENU_CALLBACK,
+    );
+    return $items;
+}
+
+function comment_buddy_comment_insert(){
+    drupal_set_message("Thanks for submitting a comment!");
+}

@@ -1,0 +1,5 @@
+name = Comment_Buddy
+description = Message to user when comment is made, edited, or deleted.
+package = My First Modules
+core = 7.x
+files[] = comment_buddy.module
